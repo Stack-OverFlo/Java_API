@@ -1,16 +1,15 @@
 import java.util.Vector;
 
-public class Friend<Vector> {
+public class Friend {
 
     protected Vector name;
 
     public Friend(Vector name) {
+        this.name = name;
     };
 
-    protected void initFriends() {
-        // Create friends
-        final Friend floriane = new Friend( "StackOverFlo");
-        final Friend gael = new Friend( "Gael42");
-        final Friend toto  = new Friend( "Toto");
+    public void displayFriends() {
+        System.out.println(name);
     }
+
 }

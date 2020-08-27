@@ -1,38 +1,48 @@
 import java.util.Vector;
 
 class Library extends Game{
+    private Vector libGames = new Vector();
+
     // Constructor
-    public Library(Vector<String> myGames) {
+    public Library(Vector myGames) {
         super();
-        initGames();
+        this.libGames = myGames;
     }
 
-    // Initialize my games
-    protected void initGames() {
-        Vector<String> myGames = new Vector<String>();
-        myGames.add("mario kart");
-        myGames.add("just dance 2020");
-        myGames.add("fifa20");
+    protected void addGames() {
 
-        // Create games
-        final Game myLib = new Library(myGames);
     }
+
+    protected void displayGames() {
+        System.out.println(libGames);
+    }
+
+    protected void removeGames() {
+
+    }
+
 }
 
 class Store extends Game{
+
+    private Vector storeGames = new Vector();
+
+    // Constructor
     public Store(Vector myStore) {
         super();
-        initGames();
+        this.storeGames = myStore;
     }
 
-    //Initialize games available in the store
-    protected void initGames() {
-        Vector<String> myGames = new Vector<>();
-        myGames.add("Black Ops 2");
-        myGames.add("Fortnite");
-        myGames.add("Smash Bross");
+    protected void addGames() {
 
-        // Create games
-        final Game myLib = new Store(myGames);
     }
+
+    protected void displayGames() {
+        System.out.println(storeGames);
+    }
+
+    protected void removeGames() {
+
+    }
+
 }

@@ -4,6 +4,16 @@ public abstract class Game {
     }
     // Constructor
 
-    protected void initGames() {
-    };
+    protected void addGames() {
+
+    }
+
+    protected void displayGames() {
+
+    }
+
+    protected void removeGames() {
+
+    }
+
 }
